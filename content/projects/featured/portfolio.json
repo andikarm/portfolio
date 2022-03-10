@@ -1,0 +1,12 @@
+{
+    "name": "Portfolio",
+    "cover_image": "/images/projects/portfolio.png",
+    "description": "A Static Website Template to showcase a Developer's projects to prospective Employers",
+    "languages": [
+        "HTML",
+        "CSS",
+        "Javascript"
+    ],
+    "github_link": "https://github.com/andikarm/andikarm.github.io",
+    "live_link": "https://andikarm.github.io/"
+}

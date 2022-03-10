@@ -1,0 +1,16 @@
+{
+    "company": "YPIT Al-Kautsar",
+    "company_website": "https://yayasanal-kautsar.sch.id/",
+    "role": "Education",
+    "contract": {
+        "type": "Full time",
+        "live": true
+    },
+    "duration": "February 2016 - December 2020",
+    "description": "This is a School.",
+    "tasks": [
+        "Web Development.",
+        "Social Media Management.",
+        "Teacher"
+    ]
+}
