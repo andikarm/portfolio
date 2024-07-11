@@ -1,0 +1,19 @@
+{
+  "company": "Upscalix Pty Ltd",
+  "company_website": "https://upscalix.com.au/",
+  "role": "WordPress Developer",
+  "contract": {
+    "type": "Full time",
+    "live": true
+  },
+  "duration": "May 2023 - Present",
+  "description": "This is a Australian web and app development company that provides Web Development, Android/iOS Development, and design.",
+  "tasks": [
+    "Translate designs and wire-frames from Zeplin/Figma/Adobe XD into high quality code.",
+    "Create WordPress themes and plugins using Themes and Page Builder (Oxygen, Elementor, WpBakery, Gutenberg and Divi builder).",
+    "Conducting website performance tests.",
+    "Troubleshooting function/code issues.",
+    "Monitoring the performance of the live website.",
+    "Optimizing on-page SEO."
+  ]
+}
