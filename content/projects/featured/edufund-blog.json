@@ -1,0 +1,7 @@
+{
+  "name": "Edufund Blog",
+  "cover_image": "/images/projects/edufund-blog.jpg",
+  "description": "The purpose of this project is to slice a Figma design into a custom WordPress theme for the Edufund Blog website. Edufund.co.id is a technology-based financial company that helps provide access to educational loans that are registered and supervised by the OJK.",
+  "languages": ["WordPress"],
+  "live_link": "https://edufund.co.id/blog/"
+}
