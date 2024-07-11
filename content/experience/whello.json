@@ -1,18 +1,18 @@
 {
-    "company": "PT. Whello Indonesia Prima",
-    "company_website": "https://whello.id",
-    "role": "Digital Marketing Agency",
-    "contract": {
-        "type": "Full time",
-        "live": true
-    },
-    "duration": "November 2020 - Present",
-    "description": "This is a Digital Marketing Agency that provides Web Development, Android/iOS Development, Social Media Ads, design, SEO, SEA and Copywriting  to clients.",
-    "tasks": [
-        "Translate designs and wire-frames into high quality code.",
-        "Design, build, and maintain high performance, reusable, and reliable wordpress code.",
-        "Ensure the best possible performance, quality, and responsiveness of the application.",
-        "Ensure the best possible performance, quality, and responsiveness of the application.",
-        "Help maintain code quality, organization, and automation."
-    ]
+  "company": "PT. Whello Indonesia Prima",
+  "company_website": "https://whello.id",
+  "role": "WordPress Developer",
+  "contract": {
+    "type": "Full time",
+    "live": true
+  },
+  "duration": "November 2020 - May 2023",
+  "description": "This is a Digital Marketing Agency that provides Web Development, Android/iOS Development, Social Media Ads, design, SEO, SEA and Copywriting  to clients.",
+  "tasks": [
+    "Translate designs and wire-frames into high quality code.",
+    "Design, build, and maintain high performance, reusable, and reliable wordpress code.",
+    "Ensure the best possible performance, quality, and responsiveness of the application.",
+    "Ensure the best possible performance, quality, and responsiveness of the application.",
+    "Help maintain code quality, organization, and automation."
+  ]
 }
