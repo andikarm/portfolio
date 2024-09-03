@@ -1,0 +1,7 @@
+{
+  "name": "GoGlobal",
+  "cover_image": "/images/projects/goglobal.jpg",
+  "description": "The website for GoGlobal, a company that offers recruit, hire, manage, and pay talent anywhere in the world, will be built using WordPress and the ACF Flexible Content plugin. \n \n The ACF Flexible Content plugin will allow GoGlobal to easily create and manage different types of content on their website, such as blog posts, case studies, and team member profiles. This will make it easy for GoGlobal to keep their website fresh and up-to-date with the latest information.",
+  "languages": ["WordPress ", "ACF"],
+  "live_link": "https://goglobal.com/"
+}
