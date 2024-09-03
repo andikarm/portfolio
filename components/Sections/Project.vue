@@ -15,7 +15,7 @@
         class="mx-auto mb-8 md:mb-12 relative lg:flex lg:items-center rounded-xl overflow-hidden"
         :class="{
           'text-right flex-row': index % 2 === 0,
-          'text-left flex-row-reverse': index % 2 !== 0
+          'text-left flex-row-reverse': index % 2 !== 0,
         }"
       >
         <div
@@ -35,7 +35,7 @@
           class="p-4 md:p-6 lg:p-0 flex items-center absolute text-gray-200 lg:text-gray-900 lg:dark:text-gray-200 bg-blue-900 bg-opacity-90 dark:bg-green-900 dark:bg-opacity-90 inset-0 lg:relative lg:bg-transparent lg:dark:bg-transparent z-10"
           :class="{
             'lg:-ml-12 lg:-mr-0': index % 2 === 0,
-            'lg:-ml-0 lg:-mr-12': index % 2 !== 0
+            'lg:-ml-0 lg:-mr-12': index % 2 !== 0,
           }"
         >
           <div>
@@ -74,22 +74,22 @@
             <div
               class="mt-2 md:mt-4 text-lg text-gray-200 lg:text-gray-500 lg:dark:text-gray-400 flex items-center"
               :class="{
-                'justify-end': index % 2 === 0
+                'justify-end': index % 2 === 0,
               }"
             >
-              <a
+              <!-- <a
                 :href="project.github_link"
                 target="_blank"
                 rel="noreferrer"
                 class="h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
               >
                 <git-hub class="h-2/3 w-2/3" />
-              </a>
+              </a> -->
               <a
                 :href="project.live_link"
                 target="_blank"
                 rel="noreferrer"
-                class="ml-4 h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
+                class="h-8 w-8 grid place-items-center hover:text-blue-500 focus:text-blue-500 dark:hover:text-cyan-400 dark:focus:text-cyan-400 rounded-full ring-blue-500 dark:ring-cyan-500 focus:ring-2 focus:outline-none"
               >
                 <external-link class="h-2/3 w-2/3" />
               </a>
@@ -102,44 +102,45 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import ExternalLink from '../Icons/ExternalLink.vue';
-import GitHub from '../Icons/GitHub.vue';
+import { mapActions } from 'vuex'
+import ExternalLink from '../Icons/ExternalLink.vue'
+// import GitHub from '../Icons/GitHub.vue'
 
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Project',
-  components: { GitHub, ExternalLink },
+  components: { ExternalLink },
   data() {
     return {
-      projects: []
-    };
+      projects: [],
+    }
   },
   created() {
-    this.getProjects();
+    this.getProjects()
   },
   methods: {
     ...mapActions({
-      openModal: 'openModal'
+      openModal: 'openModal',
     }),
     async getProjects() {
       const projects = await this.$content('projects/featured')
         .sortBy('createdAt')
-        .fetch();
+        .fetch()
 
-      this.projects = projects;
+      this.projects = projects
     },
     trimDescription(description) {
-      const maxLength = 135;
-      let trimmedDesc;
+      const maxLength = 135
+      let trimmedDesc
 
       if (description.length > maxLength) {
-        trimmedDesc = `${description.substring(0, maxLength)}...`;
+        trimmedDesc = `${description.substring(0, maxLength)}...`
       } else {
-        trimmedDesc = description;
+        trimmedDesc = description
       }
 
-      return trimmedDesc;
-    }
-  }
-};
+      return trimmedDesc
+    },
+  },
+}
 </script>
