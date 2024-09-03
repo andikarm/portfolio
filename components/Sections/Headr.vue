@@ -24,12 +24,13 @@
         >
           Get In Touch
         </nuxt-link>
-        <nuxt-link
-          to="/#contact"
+        <a
+          href="/resume-andika-rahmat-moranda.pdf"
           class="mt-8 px-6 py-3 font-sourcecode text-blue-500 dark:text-cyan-400 inline-block border-2 border-blue-500 dark:border-cyan-400 rounded-md transition hover:bg-blue-500 dark:hover:bg-cyan-400 hover:bg-opacity-20 dark:hover:bg-opacity-20 focus:bg-blue-500 dark:focus:bg-cyan-400 focus:bg-opacity-20 dark:focus:bg-opacity-20 focus:outline-none"
+          target="_blank"
         >
           Resume
-        </nuxt-link>
+        </a>
       </main>
     </div>
   </header>
@@ -37,21 +38,22 @@
 
 <script>
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'Headr',
   data() {
     return {
-      about: {}
-    };
+      about: {},
+    }
   },
   created() {
-    this.getAbout();
+    this.getAbout()
   },
   methods: {
     async getAbout() {
-      const about = await this.$content('about').fetch();
+      const about = await this.$content('about').fetch()
 
-      this.about = about;
-    }
-  }
-};
+      this.about = about
+    },
+  },
+}
 </script>
